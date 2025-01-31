@@ -1,52 +1,106 @@
 {% extends 'base.html' %}
   {% block content %}
   <main class="l-main">
-    <!--===== HOME =====-->
-    <section class="home" id="home">
-      <div class="home__container bd-grid">
-        <div class="home__sneaker">
-          <div class="home__shape"></div>
-          <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/imghome.png?raw=true" alt="" class="home__img">
-        </div>
-
-          <div class="home__data">
+      <!--===== HOME =====-->
+      <div class="carousel">
+        <div class="carousel-inner">
+            <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+            <div class="carousel-item">
+              <div class="home__container bd-grid">
+                <div class="home__sneaker">
+                  <div class="home__shape"></div>
+                  <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/imghome.png?raw=true" alt="" class="home__img">
+                </div>
+              
+                  <div class="home__data">
+                    <span class="home__new">Newest in</span>
+                    <h1 class="home__title">YEEZY BOOST <br> SPLY - 1</h1>
+                      <p class="home__description">Explore the new collections of sneekers</p>
+                      <a href="#" class="button">Explore Now</a>
+                  </div>
+                </div>
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+              <div class="home__container bd-grid">
+                <div class="home__sneaker">
+                  <div class="home__shape"></div>
+                  <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/imghome.png?raw=true" alt="" class="home__img">
+                </div>
+              
+                  <div class="home__data">
+                    <span class="home__new">Newest in</span>
+                    <h1 class="home__title">YEEZY BOOST <br> SPLY - 2</h1>
+                      <p class="home__description">Explore the new collections of sneekers</p>
+                      <a href="#" class="button">Explore Now</a>
+                  </div>
+                </div>
+            </div>
+            <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+            <div class="carousel-item">
+              <div class="home__container bd-grid">
+                <div class="home__sneaker">
+                  <div class="home__shape"></div>
+                  <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/imghome.png?raw=true" alt="" class="home__img">
+                </div>
+              
+                  <div class="home__data">
             <span class="home__new">New in</span>
-            <h1 class="home__title">YEEZY BOOST <br> SPLY - 350</h1>
-              <p class="home__description">Explore the new collections of sneekers</p>
-              <a href="#" class="button">Explore Now</a>
-          </div>
+                    <h1 class="home__title">YEEZY BOOST <br> SPLY - 350</h1>
+                      <p class="home__description">Explore the new collections of sneekers</p>
+                      <a href="#" class="button">Explore Now</a>
+                  </div>
+                </div>
+            </div>
+            <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+            <label for="carousel-2" class="carousel-control next control-1">›</label>
+            <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+            <label for="carousel-3" class="carousel-control next control-2">›</label>
+            <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+            <label for="carousel-1" class="carousel-control next control-3">›</label>
+            <ol class="carousel-indicators">
+              <li>
+                  <label for="carousel-1" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                  <label for="carousel-2" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                  <label for="carousel-3" class="carousel-bullet">•</label>
+              </li>
+          </ol>
         </div>
-    </section>
-
-    <!--===== FEATURED =====-->
-    <section class="featured section" id="featured">
-      <h2 class="section-title">FEATURED</h2>
-      <div class="featured__container bd-grid">
-        <article class="sneaker">
-          <div class="sneaker__sale">Sale</div>
-          <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/featured1.png?raw=true" alt="" class="sneaker__img">
-          <span class="sneaker__name">Nike Jordan</span>
-          <span class="sneaker__preci">$149.99</span>
-          <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-        </article>
-
-        <article class="sneaker">
-          <div class="sneaker__sale">Sale</div>
-          <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/featured2.png?raw=true" alt="" class="sneaker__img">
-          <span class="sneaker__name">Nike Free RN</span>
-          <span class="sneaker__preci">$149.99</span>
-          <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-        </article>
-
-        <article class="sneaker">
-          <div class="sneaker__sale">Sale</div>
-          <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/featured3.png?raw=true" alt="" class="sneaker__img">
-          <span class="sneaker__name">Nike Free RNq</span>
-          <span class="sneaker__preci">$149.99</span>
-          <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-        </article>
       </div>
-    </section>
+      
+      <!--===== FEATURED =====-->
+      <section class="featured section" id="featured">
+        <h2 class="section-title">FEATURED</h2>
+        <div class="featured__container bd-grid">
+          <article class="sneaker">
+            <div class="sneaker__sale">Sale</div>
+            <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/featured1.png?raw=true" alt="" class="sneaker__img">
+            <span class="sneaker__name">Nike Jordan</span>
+            <span class="sneaker__preci">$149.99</span>
+            <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
+          </article>
+        
+          <article class="sneaker">
+            <div class="sneaker__sale">Sale</div>
+            <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/featured2.png?raw=true" alt="" class="sneaker__img">
+            <span class="sneaker__name">Nike Free RN</span>
+            <span class="sneaker__preci">$149.99</span>
+            <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
+          </article>
+        
+          <article class="sneaker">
+            <div class="sneaker__sale">Sale</div>
+            <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/featured3.png?raw=true" alt="" class="sneaker__img">
+            <span class="sneaker__name">Nike Free RNq</span>
+            <span class="sneaker__preci">$149.99</span>
+            <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
+          </article>
+        </div>
+      </section>
 
     <!--===== COLLECTION =====-->
     <section class="collection section">
@@ -75,41 +129,41 @@
           </div>
     </section>
 
-    <!--===== WOMEN SNEAKERS =====-->
-    <section class="women section" id="women">
-      <h2 class="section-title">WOMEN SNEAKERS</h2>
+		<!--===== WOMEN SNEAKERS =====-->
+		<section class="women section" id="women">
+			<h2 class="section-title">WOMEN SNEAKERS</h2>
 
-      <div class="women__container bd-grid">
-        <article class="sneaker">
-          <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/women1.png?raw=true" alt="" class="sneaker__img">
-          <span class="sneaker__name">Nike Free TR</span>
-          <span class="sneaker__preci">$129.99</span>
-          <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-        </article>
+			<div class="women__container bd-grid">
+				<article class="sneaker">
+					<img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/women1.png?raw=true" alt="" class="sneaker__img">
+					<span class="sneaker__name">Nike Free TR</span>
+					<span class="sneaker__preci">$129.99</span>
+					<a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
+				</article>
 
-        <article class="sneaker">
-          <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/women2.png?raw=true" alt="" class="sneaker__img">
-          <span class="sneaker__name">Nike Free TRq</span>
-          <span class="sneaker__preci">$129.99</span>
-          <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-        </article>
+				<article class="sneaker">
+					<img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/women2.png?raw=true" alt="" class="sneaker__img">
+					<span class="sneaker__name">Nike Free TRq</span>
+					<span class="sneaker__preci">$129.99</span>
+					<a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
+				</article>
 
-        <article class="sneaker">
-          <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/women3.png?raw=true" alt="" class="sneaker__img">
-          <span class="sneaker__name">Nike GS Pink</span>
-          <span class="sneaker__preci">$129.99</span>
-          <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-        </article>
+				<article class="sneaker">
+					<img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/women3.png?raw=true" alt="" class="sneaker__img">
+					<span class="sneaker__name">Nike GS Pink</span>
+					<span class="sneaker__preci">$129.99</span>
+					<a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
+				</article>
 
-        <article class="sneaker">
-          <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/women3.png?raw=true" alt="" class="sneaker__img">
-          <span class="sneaker__name">Nike Get 5</span>
-          <span class="sneaker__preci">$129.99</span>
-          <a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
-        </article>
-      </div>
-    </section>
-
+				<article class="sneaker">
+					<img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/women3.png?raw=true" alt="" class="sneaker__img">
+					<span class="sneaker__name">Nike Get 5</span>
+					<span class="sneaker__preci">$129.99</span>
+					<a href="" class="button-light">Add to Cart <i class='bx bx-right-arrow-alt button-icon'></i></a>
+				</article>
+			</div>
+		</section>
+    
     <!--===== OFFER =====-->
     <section class="offer section">
       <div class="offer__container bd-grid">
@@ -118,7 +172,7 @@
           <p class="offer__description">In Adidas Superstar Sneakers</p>
           <a href="#" class="button">Shop Now</a>
         </div>
-
+    
         <img src="https://github.com/bedimcode/responsive-ecommerce-website-sneakers/blob/master/assets/img/offert.png?raw=true" alt="" class="offer__img">
       </div>
     </section>
